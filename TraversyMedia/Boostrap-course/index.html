@@ -62,7 +62,13 @@
               ullam consequatur beatae minima illum quas voluptates doloremque
               harum, molestiae sint?
             </p>
-            <button class="btn btn-primary btn-lg">Start The Enrollment</button>
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+            >
+              Start The Enrollment
+            </button>
           </div>
           <img
             id="hero"
@@ -459,10 +465,10 @@
           </div>
           <div class="col-md d-flex justify-content-center">
             <iframe
+              class=" "
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20999.933766606726!2d2.2738817310111195!3d48.85836826522517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e2964e34e2d%3A0x8ddca9ee380ef7e0!2sTorre%20Eiffel!5e0!3m2!1ses!2ses!4v1694882166770!5m2!1ses!2ses"
               width="400"
               height="300"
-              style="border: 0"
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
@@ -471,5 +477,72 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+      <div class="container">
+        <p class="lead">Copyright &copy; 2021 Frontend Bootcamp</p>
+        <a href="#" class="position-absolute botton-0 end-0">
+          <i class="bi bi-arrow-up-circle h1"></i>
+        </a>
+      </div>
+    </footer>
+    <!-- modal -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="enrollLabel">Modal title</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="lead">Fill Out this form and we will get back to you</p>
+            <form action="">
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >First Name:</label
+                >
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label"
+                  >Last Name:</label
+                >
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Email:</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="first-name" class="col-form-label">Phone:</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
